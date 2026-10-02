@@ -1,8 +1,6 @@
-# SnapLog 2 (C#)
+# SnapLog 2
 
 **SnapLog** is a Windows Forms desktop diagnostic utility designed for network engineers and system administrators. It provides rapid system reporting, installed software inventory, real-time network diagnostics (ping, jitter, MOS/ROS VoIP scoring, ICMP traceroute, TCP telnet testing), Citrix/VDI registry inspection, and custom script execution.
-
-> **Note:** This project has been converted from VB.NET to modern C# (.NET Framework 4.5), retaining 100% of the original Windows Forms UI layout, controls, events, and diagnostic functionality. Original VB source files are archived in `archive/vb_original/`.
 
 ---
 
@@ -39,8 +37,6 @@
 ```
 SnapLog2/
 ├── SnapLog.sln                       # Visual Studio Solution
-├── archive/
-│   └── vb_original/                  # Archived original VB.NET source files
 └── SnapLog/
     ├── SnapLog.csproj                # C# WinExe Project File (.NET Framework 4.5)
     ├── App.config                    # Application configuration & user settings
@@ -88,4 +84,4 @@ SnapLog2/
 ```cmd
 msbuild SnapLog.sln /t:Rebuild /p:Configuration=Release
 ```
-The compiled executable will be placed in `SnapLog\bin\Release\SnapLog.exe`.
+The compiled executable will be placed in `SnapLog\bin\Release\SnapLog.exe`.
